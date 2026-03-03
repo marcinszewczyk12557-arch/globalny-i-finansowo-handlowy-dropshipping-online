@@ -1,18 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/</loc><priority>1.0</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#model</loc><priority>0.9</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#finansowanie</loc><priority>0.9</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#bezpieczenstwo</loc><priority>0.8</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#kontakt</loc><priority>0.8</priority></url>
+<!-- Strona główna -->
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+</url>
 
-<!-- SEO sekcje -->
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#nowosci-technologiczne</loc><priority>0.95</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#nowosci</loc><priority>0.95</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#promocje</loc><priority>0.95</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#kredyt-kupiecki</loc><priority>0.9</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#bez-weryfikacji-finansowych</loc><priority>0.9</priority></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#pozostale-kategorie</loc><priority>0.85</priority></url>
+<!-- Kategorie główne -->
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#elektronika-uzytkowa</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#bezpieczenstwo</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#maszyny-przemyslowe-i-budowlane</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#chemikalia-i-surowce</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#komponenty-elektroniczne</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#narzedzia-i-sprzet</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#pojazdy-i-transport</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#dom-ogrod-odziez-i-dodatki</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#energia-odnawialna-i-sprzet-ekologiczny</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#uroda-sport-i-zdrowie</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#artykuly-biurowe-szkolne-i-uslugowe</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/#pozostale-kategorie</loc>
+  <lastmod>2026-03-03</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
 
 </urlset>
