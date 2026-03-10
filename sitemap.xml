@@ -1,14 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/index.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/elektronika-uzytkowa.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/bezpieczenstwo.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/maszyny-przemyslowe.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/chemikalia.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/tkaniny-i-surowce-tekstylne.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/komponenty-elektroniczne-akcesoria-i-telekomunikacja.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/narzedzia-i-sprzet.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/prezenty-i-rekodzielo.html</loc></url>
-<url><loc>https://marcinszewczyk12557-arch.github.io/global-dropshipping/rolnictwo.html</loc></url>
-<!-- Kontynuuj w tej samej strukturze dla wszystkich 37 kategorii -->
-</urlset>
+{
+    "categories": [
+        {"id": "technologia", "name": "Technologia"},
+        {"id": "nauka", "name": "Nauka"},
+        {"id": "sport", "name": "Sport"},
+        {"id": "sztuka", "name": "Sztuka"},
+        {"id": "muzyka", "name": "Muzyka"}
+    ]
+}
