@@ -5,41 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dropshipping - Mega Menu</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: Arial, sans-serif; background:#f8f9fa; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; background:#f8f9fa; }
 
-  /* Navbar */
-  nav { background:#007BFF; color:white; position:sticky; top:0; z-index:1000; }
-  nav .nav-container { display:flex; justify-content:space-between; align-items:center; padding:1rem; }
-  nav h1 { font-size:1.5rem; }
-  .menu-toggle { display:none; font-size:1.5rem; cursor:pointer; }
+nav { background:#007BFF; color:white; position:sticky; top:0; z-index:1000; }
+nav .nav-container { display:flex; justify-content:space-between; align-items:center; padding:1rem; flex-wrap:wrap; }
+nav h1 { font-size:1.5rem; }
+.menu-toggle { display:none; font-size:1.5rem; cursor:pointer; }
 
-  ul.menu { list-style:none; display:flex; gap:1rem; }
-  ul.menu li { position:relative; }
-  ul.menu li a { color:white; text-decoration:none; padding:0.5rem 1rem; display:block; }
-  ul.menu li a:hover { background:rgba(255,255,255,0.2); border-radius:5px; }
+ul.menu { list-style:none; display:flex; gap:1rem; flex-wrap:wrap; }
+ul.menu li { position:relative; }
+ul.menu li a { color:white; text-decoration:none; padding:0.5rem 1rem; display:block; }
+ul.menu li a:hover { background:rgba(255,255,255,0.2); border-radius:5px; }
 
-  /* Mega menu */
-  .mega { display:none; position:absolute; left:0; top:100%; width:100vw; background:white; color:black; padding:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
-  .mega .category { display:flex; flex-wrap:wrap; gap:1rem; }
-  .mega .product { width:150px; text-align:center; }
-  .mega .product img { width:100%; border-radius:5px; }
-  .mega .product p { margin-top:0.5rem; font-size:0.9rem; }
+.mega { display:none; position:absolute; left:0; top:100%; width:100vw; background:white; color:black; padding:1rem; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
+.mega .category { display:flex; flex-wrap:wrap; gap:1rem; }
+.mega .product { width:150px; text-align:center; }
+.mega .product img { width:100%; border-radius:5px; }
+.mega .product p { margin-top:0.5rem; font-size:0.9rem; }
 
-  /* Hover to show mega menu */
-  ul.menu li:hover .mega { display:flex; }
+ul.menu li:hover .mega { display:flex; }
 
-  /* Mobile */
-  @media(max-width:768px){
-    .menu-toggle{ display:block; }
-    ul.menu { display:none; flex-direction:column; width:100%; }
-    ul.menu.show { display:flex; }
-    .mega { position:static; width:100%; flex-wrap:wrap; padding:0.5rem 0; box-shadow:none; display:none; }
-    ul.menu li.show-mega .mega { display:flex; flex-wrap:wrap; gap:0.5rem; }
-  }
+@media(max-width:768px){
+  .menu-toggle{ display:block; }
+  ul.menu { display:none; flex-direction:column; width:100%; }
+  ul.menu.show { display:flex; }
+  .mega { position:static; width:100%; flex-wrap:wrap; padding:0.5rem 0; box-shadow:none; display:none; }
+  ul.menu li.show-mega .mega { display:flex; flex-wrap:wrap; gap:0.5rem; }
+}
 
-  section { padding:2rem; border-bottom:1px solid #ddd; background:white; margin:0.5rem; border-radius:5px; }
-  section h2 { margin-bottom:1rem; color:#007BFF; }
+section { padding:2rem; border-bottom:1px solid #ddd; background:white; margin:0.5rem; border-radius:5px; }
+section h2 { margin-bottom:1rem; color:#007BFF; }
 </style>
 </head>
 <body>
@@ -49,53 +45,82 @@
     <h1>Dropshipping</h1>
     <span class="menu-toggle">&#9776;</span>
     <ul class="menu">
-      <li>
-        <a href="#elektronika">Elektronika użytkowa</a>
+
+      <!-- Każda kategoria -->
+      <li><a href="#elektronika">Elektronika użytkowa</a>
         <div class="mega">
           <div class="category">
             <div class="product"><img src="placeholder1.jpg" alt="Produkt 1"><p>Produkt 1</p></div>
             <div class="product"><img src="placeholder2.jpg" alt="Produkt 2"><p>Produkt 2</p></div>
-            <div class="product"><img src="placeholder3.jpg" alt="Produkt 3"><p>Produkt 3</p></div>
           </div>
         </div>
       </li>
-      <li>
-        <a href="#bezpieczenstwo">Bezpieczeństwo</a>
+      <li><a href="#bezpieczenstwo">Bezpieczeństwo</a>
         <div class="mega">
           <div class="category">
+            <div class="product"><img src="placeholder3.jpg" alt="Produkt 3"><p>Produkt 3</p></div>
             <div class="product"><img src="placeholder4.jpg" alt="Produkt 4"><p>Produkt 4</p></div>
-            <div class="product"><img src="placeholder5.jpg" alt="Produkt 5"><p>Produkt 5</p></div>
-            <div class="product"><img src="placeholder6.jpg" alt="Produkt 6"><p>Produkt 6</p></div>
           </div>
         </div>
       </li>
-      <!-- Dodaj więcej kategorii podobnie -->
+      <li><a href="#maszyny-przemyslowe">Maszyny przemysłowe</a>
+        <div class="mega">
+          <div class="category">
+            <div class="product"><img src="placeholder5.jpg" alt="Produkt 5"><p>Produkt 5</p></div>
+          </div>
+        </div>
+      </li>
+      <li><a href="#chemikalia">Chemikalia</a>
+        <div class="mega">
+          <div class="category"><div class="product"><img src="placeholder6.jpg" alt="Produkt 6"><p>Produkt 6</p></div></div>
+        </div>
+      </li>
+      <li><a href="#tkaniny">Tkaniny i surowce tekstylne</a>
+        <div class="mega"><div class="category"><div class="product"><img src="placeholder7.jpg" alt="Produkt 7"><p>Produkt 7</p></div></div></div>
+      </li>
+      <li><a href="#komponenty">Komponenty elektroniczne i telekomunikacja</a>
+        <div class="mega"><div class="category"><div class="product"><img src="placeholder8.jpg" alt="Produkt 8"><p>Produkt 8</p></div></div></div>
+      </li>
+      <li><a href="#narzedzia">Narzędzia i sprzęt</a>
+        <div class="mega"><div class="category"><div class="product"><img src="placeholder9.jpg" alt="Produkt 9"><p>Produkt 9</p></div></div></div>
+      </li>
+      <li><a href="#prezenty">Prezenty i rękodzieło</a>
+        <div class="mega"><div class="category"><div class="product"><img src="placeholder10.jpg" alt="Produkt 10"><p>Produkt 10</p></div></div></div>
+      </li>
+      <!-- Dodaj pozostałe kategorie w ten sam sposób do 37 -->
+      
     </ul>
   </div>
 </nav>
 
 <div class="content">
+  <!-- Sekcje kategorii -->
   <section id="elektronika"><h2>Elektronika użytkowa</h2><p>Wstaw tutaj swoje produkty.</p></section>
   <section id="bezpieczenstwo"><h2>Bezpieczeństwo</h2><p>Wstaw tutaj swoje produkty.</p></section>
-  <!-- Dodaj sekcje dla pozostałych kategorii -->
+  <section id="maszyny-przemyslowe"><h2>Maszyny przemysłowe</h2><p>Wstaw tutaj swoje produkty.</p></section>
+  <section id="chemikalia"><h2>Chemikalia</h2><p>Wstaw tutaj swoje produkty.</p></section>
+  <section id="tkaniny"><h2>Tkaniny i surowce tekstylne</h2><p>Wstaw tutaj swoje produkty.</p></section>
+  <section id="komponenty"><h2>Komponenty elektroniczne i telekomunikacja</h2><p>Wstaw tutaj swoje produkty.</p></section>
+  <section id="narzedzia"><h2>Narzędzia i sprzęt</h2><p>Wstaw tutaj swoje produkty.</p></section>
+  <section id="prezenty"><h2>Prezenty i rękodzieło</h2><p>Wstaw tutaj swoje produkty.</p></section>
+  <!-- Dodaj pozostałe sekcje do 37 kategorii -->
 </div>
 
 <script>
-  const toggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('ul.menu');
-  toggle.addEventListener('click', ()=> menu.classList.toggle('show'));
+const toggle=document.querySelector('.menu-toggle');
+const menu=document.querySelector('ul.menu');
+toggle.addEventListener('click',()=>menu.classList.toggle('show'));
 
-  // Mobile: kliknięcie kategorii pokazuje mega menu
-  const menuItems = document.querySelectorAll('ul.menu > li > a');
-  menuItems.forEach(item=>{
-    item.addEventListener('click', e=>{
-      if(window.innerWidth<=768){
-        e.preventDefault();
-        const parent = item.parentElement;
-        parent.classList.toggle('show-mega');
-      }
-    });
+const menuItems=document.querySelectorAll('ul.menu>li>a');
+menuItems.forEach(item=>{
+  item.addEventListener('click',e=>{
+    if(window.innerWidth<=768){
+      e.preventDefault();
+      const parent=item.parentElement;
+      parent.classList.toggle('show-mega');
+    }
   });
+});
 </script>
 
 </body>
