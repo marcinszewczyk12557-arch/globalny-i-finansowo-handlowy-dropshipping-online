@@ -1,41 +1,45 @@
-<nav>
-  <ul>
-    <li><a href="/elektronika-uzytkowa.html">Elektronika użytkowa</a></li>
-    <li><a href="/bezpieczenstwo.html">Bezpieczeństwo</a></li>
-    <li><a href="/maszyny-przemyslowe.html">Maszyny przemysłowe</a></li>
-    <li><a href="/chemikalia.html">Chemikalia</a></li>
-    <li><a href="/tkaniny-i-surowce.html">Tkaniny i surowce tekstylne</a></li>
-    <li><a href="/komponenty-elektroniczne.html">Komponenty elektroniczne i telekomunikacja</a></li>
-    <li><a href="/narzedzia-i-sprzet.html">Narzędzia i sprzęt</a></li>
-    <li><a href="/prezenty-i-rekodzielo.html">Prezenty i rękodzieło</a></li>
-    <li><a href="/rolnictwo.html">Rolnictwo</a></li>
-    <li><a href="/sprzet-i-maszyny-komercyjne.html">Sprzęt i maszyny komercyjne</a></li>
-    <li><a href="/odziez-i-akcesoria.html">Odzież i akcesoria</a></li>
-    <li><a href="/srodowisko.html">Środowisko</a></li>
-    <li><a href="/instrumenty-i-sprzet-testowy.html">Instrumenty i sprzęt testowy</a></li>
-    <li><a href="/pojazdy-i-transport.html">Pojazdy i transport</a></li>
-    <li><a href="/bizuteria-okulary-i-zegarki.html">Biżuteria, okulary i zegarki</a></li>
-    <li><a href="/obuwie-i-akcesoria.html">Obuwie i akcesoria</a></li>
-    <li><a href="/dom-i-ogrod.html">Dom i ogród</a></li>
-    <li><a href="/mama-dzieci-i-zabawki.html">Mama, dzieci i zabawki</a></li>
-    <li><a href="/energia-odnawialna.html">Energia odnawialna</a></li>
-    <li><a href="/uroda.html">Uroda</a></li>
-    <li><a href="/sport-i-rozrywka.html">Sport i rozrywka</a></li>
-    <li><a href="/opieka-zdrowotna.html">Opieka zdrowotna</a></li>
-    <li><a href="/sprzet-elektryczny-i-agd.html">Sprzęt elektryczny i AGD</a></li>
-    <li><a href="/agd.html">AGD</a></li>
-    <li><a href="/akcesoria-samochodowe.html">Akcesoria samochodowe</a></li>
-    <li><a href="/budownictwo-i-nieruchomosci.html">Budownictwo i nieruchomości</a></li>
-    <li><a href="/meble.html">Meble</a></li>
-    <li><a href="/oswietlenie.html">Oświetlenie</a></li>
-    <li><a href="/maszyny-budowlane.html">Maszyny budowlane</a></li>
-    <li><a href="/artykuly-dla-zwierzat.html">Artykuły dla zwierząt</a></li>
-    <li><a href="/czesci-i-akcesoria-samochodowe.html">Części i akcesoria samochodowe</a></li>
-    <li><a href="/uslugi-logistyczne.html">Usługi logistyczne</a></li>
-    <li><a href="/pakowanie-i-drukowanie.html">Pakowanie i drukowanie</a></li>
-    <li><a href="/bagaz-torby-i-walizki.html">Bagaż, torby i walizki</a></li>
-    <li><a href="/metale-i-stopy.html">Metale i stopy</a></li>
-    <li><a href="/artykuly-szkolne-i-biurowe.html">Artykuły szkolne i biurowe</a></li>
-    <li><a href="/pielegnacja-i-sprzatanie.html">Pielęgnacja osobista i sprzątanie domu</a></li>
-  </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategorie dynamiczne</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; }
+        h1 { text-align: center; }
+        ul.categories { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+        ul.categories li { background: #fff; margin: 10px; padding: 20px; border-radius: 8px;
+                            box-shadow: 0 2px 5px rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.2s; }
+        ul.categories li:hover { transform: scale(1.05); }
+        a { text-decoration: none; color: inherit; display: block; }
+    </style>
+</head>
+<body>
+    <h1>Kategorie</h1>
+    <ul class="categories" id="categoryList"></ul>
+
+    <script>
+        async function loadCategories() {
+            try {
+                const response = await fetch('suite.map');
+                if (!response.ok) throw new Error('Nie można załadować suite.map');
+                const data = await response.json();
+                const list = document.getElementById('categoryList');
+
+                data.categories.forEach(cat => {
+                    const li = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = `category.html?cat=${encodeURIComponent(cat.id)}`;
+                    link.textContent = cat.name;
+                    li.appendChild(link);
+                    list.appendChild(li);
+                });
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        loadCategories();
+    </script>
+</body>
+</html>
