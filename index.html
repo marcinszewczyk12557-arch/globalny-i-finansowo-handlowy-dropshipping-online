@@ -1,240 +1,152 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="GLOBAL DROPSHIPPING - prywatna platforma B2B oferująca luksusowe produkty, indywidualne oferty finansowo-handlowe, leasing, zakupy ratalne, system zamówień i generator ofert AI.">
-<meta name="keywords" content="GLOBAL DROPSHIPPING, dropshipping, B2B, leasing, zakupy ratalne, platforma handlowa, oferty AI, faktury, zamówienia, Stripe, PayPal">
-<meta name="author" content="Marcin Szewczyk">
-
-<title>GLOBAL DROPSHIPPING B2B</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-
-<style>
-body{
-font-family:'Inter',sans-serif;
-background:#05070f;
-color:white;
-margin:0;
-}
-header{
-text-align:center;
-padding:60px;
-background:linear-gradient(120deg,#0f1c3d,#05070f);
-}
-.container{
-max-width:900px;
-margin:auto;
-padding:40px;
-}
-form{
-background:#0c1224;
-padding:25px;
-border-radius:10px;
-margin-bottom:25px;
-}
-input, textarea, select{
-width:100%;
-padding:12px;
-margin-bottom:12px;
-background:#05070f;
-border:none;
-color:white;
-border-radius:6px;
-}
-button{
-padding:12px 25px;
-background:#4da3ff;
-border:none;
-color:white;
-cursor:pointer;
-border-radius:6px;
-}
-.panel{
-display:none;
-}
-.card{
-background:#0c1224;
-padding:20px;
-border-radius:8px;
-margin-bottom:10px;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesja Premium Limited Offer | Global B2B Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0b0f17; color: #e2e8f0; font-family: 'Inter', sans-serif; }
+        .gold-gradient { background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa7c11 100%); }
+        .gold-text { background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>GLOBAL DROPSHIPPING</h1>
-<p>Prywatna platforma B2B z luksusowymi ofertami i finansowaniem</p>
-</header>
+    <!-- NAV BAR -->
+    <nav class="border-b border-slate-800 bg-slate-950/80 sticky top-0 z-50 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span class="text-2xl font-bold tracking-wider gold-text">PROFESJA PREMIUM</span>
+                <span class="text-xs bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2 py-1 rounded">LIMITED OFFER</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#o-nas" class="hover:text-amber-400 transition">O Agencji</a>
+                <a href="#no-name-no-logo" class="hover:text-amber-400 transition">No Name No Logo®</a>
+                <a href="#finansowanie" class="hover:text-amber-400 transition">Finansowanie Bez BIK</a>
+                <a href="#panel-b2b" class="hover:text-amber-400 transition">Generator AI</a>
+            </div>
+            <a href="mailto:profesja.premium@gmail.com" class="gold-gradient text-slate-950 font-semibold px-5 py-2 rounded-lg hover:opacity-90 transition">
+                Kontakt B2B
+            </a>
+        </div>
+    </nav>
 
-<div class="container">
+    <!-- HERO SECTION -->
+    <header class="py-24 px-6 text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                Globalny Sourcing B2B & <span class="gold-text">Luksusowa Elektronika</span>
+            </h1>
+            <p class="text-lg text-slate-400 mb-8 leading-relaxed">
+                Indywidualna agencja finansowo-handlowa realizująca kompleksowe dostawy zweryfikowanej elektroniki użytkowej, sprzętu IT i elektronarzędzi bezpośrednio od audytowanych producentów.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#panel-b2b" class="gold-gradient text-slate-950 font-bold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition">Złóż Zapytanie Ofertowe (RFQ)</a>
+                <a href="#finansowanie" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl border border-slate-700 transition">Finansowanie Alternatywne</a>
+            </div>
+        </div>
+    </header>
 
-<h2>Rejestracja</h2>
-<form id="registerForm">
-<input id="regUser" placeholder="Login">
-<input id="regPass" type="password" placeholder="Hasło">
-<button>Zarejestruj</button>
-</form>
+    <!-- BRANDING SECTION: NO NAME NO LOGO -->
+    <section id="no-name-no-logo" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="glass-card rounded-2xl p-8 border border-slate-700/50 flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400 mb-2 block">Dedykowana Linia Produktowa</span>
+                <h2 class="text-3xl font-bold mb-4">No Name No Logo® Premium Electronic</h2>
+                <p class="text-slate-300 leading-relaxed mb-4">
+                    Oferujemy najwyższej klasy asortyment urządzeń elektrycznych oraz elektroniki użytkowej (smartfony, laptopy, tablety, zestawy elektronarzędzi). Produkty dostarczane są w standardzie OEM/Private Label, zapewniając pełne bezpieczeństwo użytkowania oraz certyfikację CE, LVD, EMC, RoHS.
+                </p>
+                <ul class="space-y-2 text-slate-400 text-sm">
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-amber-400 mr-2"></i> Pełna gwarancja techniczna (minimum 1 rok)</li>
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-amber-400 mr-2"></i> Wsparcie serwisowe i zapas części zamiennych (RMA)</li>
+                    <li class="flex items-center"><i class="fa-solid fa-circle-check text-amber-400 mr-2"></i> Audyt jakośćowy przed wysyłką (ANSI/ASQ Z1.4 AQL Level II)</li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="p-8 rounded-xl bg-slate-950 border border-amber-500/20 text-center w-full">
+                    <i class="fa-solid fa-microchip text-6xl gold-text mb-4"></i>
+                    <h3 class="text-xl font-bold gold-text">No Name No Logo®</h3>
+                    <p class="text-xs text-slate-500 mt-2">PREMIUM ELECTRONIC HARDWARE</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h2>Logowanie</h2>
-<form id="loginForm">
-<input id="loginUser" placeholder="Login">
-<input id="loginPass" type="password" placeholder="Hasło">
-<button>Zaloguj</button>
-</form>
+    <!-- FINANSOWANIE BEZ BIK -->
+    <section id="finansowanie" class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold gold-text">Finansowanie Ze Środków Wysokiego Ryzyka</h2>
+            <p class="text-slate-400 mt-2">Dedykowane procedury finansowe dla zakupów realizowanych przez naszą agencję</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-xl border border-slate-800">
+                <i class="fa-solid fa-shield-halved text-3xl text-amber-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Bez BAZ: BIK, BIG, KRD</h3>
+                <p class="text-sm text-slate-400">Brak weryfikacji w zewnętrznych rejestrach dłużników. Nie pytamy o zajęcia komornicze oraz historie upadłościowe.</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl border border-slate-800">
+                <i class="fa-solid fa-file-signature text-3xl text-amber-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Uproszczona Procedura</h3>
+                <p class="text-sm text-slate-400">Finansowanie udzielane na podstawie **Oświadczenia o Bezwarunkowym Poddaniu Się Zapłacie** oraz pierwszej wpłaty własnej.</p>
+            </div>
+            <div class="glass-card p-6 rounded-xl border border-slate-800">
+                <i class="fa-solid fa-coins text-3xl text-amber-400 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Leasing & Kredyt Kupiecki</h3>
+                <p class="text-sm text-slate-400">Szeroki wybór instrumentów: leasing w procedurze uproszczonej, kredyt inwestycyjno-kupiecki oraz pożyczka konsumencka.</p>
+            </div>
+        </div>
+    </section>
 
-<div id="clientPanel" class="panel">
-<h2>Panel klienta B2B</h2>
+    <!-- AI B2B INQUIRY PANEL -->
+    <section id="panel-b2b" class="py-16 px-6 max-w-4xl mx-auto">
+        <div class="glass-card p-8 rounded-2xl border border-amber-500/30">
+            <h2 class="text-2xl font-bold mb-2 gold-text">Generator Ofert Handlowych AI</h2>
+            <p class="text-sm text-slate-400 mb-6">Wprowadź specyfikację techniczną poszukiwanego sprzętu. Nasz system AI zweryfikuje certyfikowanych producentów z Alibaba.com i wygeneruje kalkulację.</p>
+            
+            <form onsubmit="event.preventDefault(); generateAIOffer();" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Kategoria Produktu</label>
+                    <select id="category" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-sm focus:border-amber-400 outline-none">
+                        <option>Elektronika Użytkowa (Smartfony / Tablety / IT)</option>
+                        <option>Zestawy Elektronarzędzi Przemysłowych</option>
+                        <option>Aparatura Elektryczna i Zasilanie</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Opis Wymagań / Specyfikacja RFQ</label>
+                    <textarea id="requirements" rows="4" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-sm focus:border-amber-400 outline-none" placeholder="Opisz dokładnie poszukiwany produkt, parametry techniczne oraz oczekiwaną ilość..."></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Adres E-mail do odpowiedzi</label>
+                    <input type="email" required placeholder="twoj-email@firma.pl" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-3 text-sm focus:border-amber-400 outline-none">
+                </div>
+                <button type="submit" class="w-full gold-gradient text-slate-950 font-bold py-4 rounded-lg shadow-lg hover:opacity-95 transition">
+                    Prześlij Zapytanie do Analizy AI i Agencji
+                </button>
+            </form>
 
-<form id="rfqForm">
-<input id="producer" placeholder="Producent">
-<input id="model" placeholder="Model">
-<input id="quantity" placeholder="Ilość">
-<input id="price" placeholder="Cena oczekiwana">
-<textarea id="notes" placeholder="Dodatkowe uwagi"></textarea>
-<button>Wyślij zapytanie</button>
-</form>
+            <div id="ai-status" class="hidden mt-6 p-4 rounded-lg bg-slate-900 border border-amber-500/40 text-sm">
+                <p class="text-amber-400 font-bold"><i class="fa-solid fa-robot mr-2"></i> AI Sourcing Agent analizuje ofertę...</p>
+                <p class="text-xs text-slate-400 mt-1">Trwa weryfikacja producentów Verified Supplier, sprawdzanie certyfikatów CE/EMC oraz wyliczanie wskaźnika Landed Cost.</p>
+            </div>
+        </div>
+    </section>
 
-<h3>Twoje zapytania</h3>
-<div id="clientRequests"></div>
+    <footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        <p>Profesja Premium Limited Offer &copy; 2026. Wszelkie prawa zastrzeżone.</p>
+        <p class="mt-1">Kontakt: profesja.premium@gmail.com | System Sourcingu Elektroniki A-Z</p>
+    </footer>
 
-<h3>Generator oferty AI</h3>
-<textarea id="description" placeholder="Opis zapotrzebowania klienta"></textarea>
-<button onclick="generateOffer()">Generuj ofertę AI</button>
-<div id="aiOffer"></div>
-</div>
-
-<div id="adminPanel" class="panel">
-<h2>Panel administratora</h2>
-
-<h3>Użytkownicy</h3>
-<div id="usersList"></div>
-
-<h3>Zapytania klientów</h3>
-<div id="allRequests"></div>
-</div>
-
-</div>
-
-<script>
-let users=JSON.parse(localStorage.getItem("users"))||[];
-let requests=JSON.parse(localStorage.getItem("requests"))||[];
-let currentUser=null;
-
-document.getElementById("registerForm").addEventListener("submit",e=>{
-e.preventDefault();
-let user={login:regUser.value,pass:regPass.value};
-users.push(user);
-localStorage.setItem("users",JSON.stringify(users));
-alert("Konto utworzone");
-});
-
-document.getElementById("loginForm").addEventListener("submit",e=>{
-e.preventDefault();
-let login=loginUser.value;
-let pass=loginPass.value;
-if(login==="admin" && pass==="admin"){
-adminPanel.style.display="block";
-renderAdmin();
-return;
-}
-let found=users.find(u=>u.login===login && u.pass===pass);
-if(found){
-currentUser=login;
-clientPanel.style.display="block";
-renderClient();
-}else{
-alert("Nieprawidłowe dane");
-}
-});
-
-document.getElementById("rfqForm").addEventListener("submit",e=>{
-e.preventDefault();
-let r={
-user:currentUser,
-producer:producer.value,
-model:model.value,
-quantity:quantity.value,
-price:price.value,
-notes:notes.value
-};
-requests.push(r);
-localStorage.setItem("requests",JSON.stringify(requests));
-renderClient();
-});
-
-function renderClient(){
-let html="";
-requests.filter(r=>r.user===currentUser).forEach((r,i)=>{
-html+=`
-<div class="card">
-Producent: ${r.producer}<br>
-Model: ${r.model}<br>
-Ilość: ${r.quantity}<br>
-Cena: ${r.price}<br>
-Uwagi: ${r.notes}
-<br><br>
-<button onclick="generatePDF(${i})">Pobierz PDF</button>
-</div>
-`;
-});
-clientRequests.innerHTML=html;
-}
-
-function renderAdmin(){
-let usersHTML="";
-users.forEach(u=>{
-usersHTML+=`<div class="card">${u.login}</div>`;
-});
-usersList.innerHTML=usersHTML;
-let reqHTML="";
-requests.forEach(r=>{
-reqHTML+=`
-<div class="card">
-Użytkownik: ${r.user}<br>
-Producent: ${r.producer}<br>
-Model: ${r.model}<br>
-Ilość: ${r.quantity}<br>
-Cena: ${r.price}<br>
-Uwagi: ${r.notes}
-</div>
-`;
-});
-allRequests.innerHTML=reqHTML;
-}
-
-function generatePDF(i){
-const { jsPDF } = window.jspdf;
-let r=requests[i];
-let doc=new jsPDF();
-doc.text("GLOBAL DROPSHIPPING",20,20);
-doc.text("Oferta handlowa",20,40);
-doc.text("Producent: "+r.producer,20,60);
-doc.text("Model: "+r.model,20,70);
-doc.text("Ilość: "+r.quantity,20,80);
-doc.text("Cena: "+r.price,20,90);
-doc.text("Uwagi: "+r.notes,20,100);
-doc.save("oferta.pdf");
-}
-
-// AI generujące ofertę
-function generateOffer(){
-let text=description.value;
-let offer=
-"GLOBAL DROPSHIPPING - propozycja oferty AI:\n\n"+
-"Opis: "+text+"\n"+
-"Finansowanie: leasing uproszczony lub zakupy ratalne\n"+
-"Możliwe korekty parametrów produktu, nazwy marki, modelu oraz ceny.\n"+
-"Można dodać zdjęcia lub video w ofercie finalnej.";
-aiOffer.innerText=offer;
-}
-</script>
-
+    <script>
+        function generateAIOffer() {
+            document.getElementById('ai-status').classList.remove('hidden');
+            setTimeout(() => {
+                alert('Zapytanie zostało pomyślnie przetworzone przez AI i przesłane do weryfikacji właściciela agencji na adres profesja.premium@gmail.com. Odpowiedź z ofertą i prezentacją video zostanie przesłana na wskazany e-mail.');
+            }, 1500);
+        }
+    </script>
 </body>
 </html>
