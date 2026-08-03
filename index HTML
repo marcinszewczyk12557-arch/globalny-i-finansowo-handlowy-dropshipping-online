@@ -3,119 +3,496 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GLOBAL DROPSHIPPING | Procedura zakupów ratalnych</title>
+<title>Ekskluzywna Oferta Premium B2B - Profesja Premium Limited</title>
 <style>
-* {margin:0; padding:0; box-sizing:border-box;}
-body {font-family:'Segoe UI', Arial, sans-serif; background:#f4f6f9; color:#1c1f26; line-height:1.65;}
-a {color:inherit; text-decoration:none;}
-nav {background:#0d1b2a; color:#fff; padding:20px 8%; display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap;}
-nav .logo {font-weight:700; letter-spacing:1px;}
-nav ul {list-style:none; display:flex; gap:22px; flex-wrap:wrap;}
-nav ul li a {color:#d0d6e0; font-size:14px;}
-nav ul li a:hover {color:#fff;}
-.hero {background:linear-gradient(135deg,#0d1b2a,#172f49); color:#fff; padding:110px 8%; text-align:center;}
-.hero h1 {font-size:42px; margin-bottom:18px;}
-.hero p {max-width:860px; margin:0 auto 34px; color:#cbd3df; font-size:18px;}
-.btn-primary {display:inline-block; background:#c6a75e; color:#0d1b2a; padding:14px 30px; border-radius:4px; font-weight:700;}
-section {padding:82px 8%;}
-.section-title {text-align:center; margin-bottom:42px; font-size:30px; color:#0d1b2a;}
-.lead {max-width:980px; margin:0 auto 32px; color:#4a5565; text-align:center;}
-.grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:26px;}
-.card {background:#fff; padding:28px; border-radius:8px; box-shadow:0 3px 15px rgba(0,0,0,.06);}
-.card h3 {margin-bottom:12px; color:#0d1b2a;}
-.card p, .card li {color:#555;}
-.card ul, .card ol {padding-left:20px; margin-top:10px;}
-.procedure {background:#fff;}
-.steps {counter-reset:step; max-width:1050px; margin:0 auto; display:grid; gap:18px;}
-.step {position:relative; background:#f8fafc; border-left:5px solid #c6a75e; border-radius:8px; padding:24px 24px 24px 82px; box-shadow:0 2px 10px rgba(0,0,0,.04);}
-.step:before {counter-increment:step; content:counter(step); position:absolute; left:24px; top:24px; width:36px; height:36px; border-radius:50%; background:#0d1b2a; color:#fff; display:grid; place-items:center; font-weight:700;}
-.step h3 {color:#0d1b2a; margin-bottom:8px;}
-.notice {max-width:1050px; margin:28px auto 0; padding:22px; border-radius:8px; background:#fff8e5; border:1px solid #ead39a; color:#584615;}
-.trust {background:#0d1b2a; color:#fff;}
-.trust .section-title {color:#fff;}
-.trust li {margin-bottom:12px;}
-.cta {text-align:center; background:#e9edf3;}
-footer {background:#0d1b2a; color:#b5bdc9; text-align:center; padding:40px 8%; font-size:14px;}
-.small {font-size:13px; color:#667085;}
-@media (max-width:720px){.hero h1{font-size:32px}.step{padding-left:24px}.step:before{position:static; margin-bottom:12px}}
+  :root {
+    --primary-color: #0a1a2f;
+    --accent-color: #ff6600;
+    --verified-blue: #0066cc;
+    --bg-light: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-dark: #222222;
+    --text-muted: #555555;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+
+  header {
+    background: var(--primary-color);
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+  }
+
+  header h1 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+
+  header p {
+    margin: 0;
+    font-size: 15px;
+    color: #b0c4de;
+  }
+
+  .badges-bar {
+    background: #06101e;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .badge-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .badge-verified {
+    background-color: var(--verified-blue);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .main-container {
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+
+  .hero-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 6px solid var(--accent-color);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .catalog-title {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 0;
+  }
+
+  .btn-add {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .btn-add:hover {
+    background-color: #e05500;
+  }
+
+  .product-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .product-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border: 1px solid #e1e8ed;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: #fafafa;
+  }
+
+  .product-info {
+    flex-grow: 1;
+  }
+
+  .product-info h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 16px;
+    outline: none;
+    padding: 2px;
+  }
+
+  .product-info p {
+    font-size: 13px;
+    color: var(--text-muted);
+    outline: none;
+    padding: 2px;
+  }
+
+  .product-pricing {
+    border-top: 1px solid #e1e8ed;
+    padding-top: 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .final-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #27ae60;
+    outline: none;
+    padding: 2px;
+  }
+
+  .margin {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--accent-color);
+    outline: none;
+    padding: 2px;
+  }
+
+  .editable:focus {
+    background-color: #fff9e6;
+    border-radius: 3px;
+    box-shadow: 0 0 0 2px #ffc107;
+  }
+
+  .btn-delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .info-section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .info-section h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+  }
+
+  footer {
+    background: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  footer a {
+    color: #87ceeb;
+    text-decoration: none;
+  }
+
+  /* Modal Form stylings */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .modal-content h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .btn-submit {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-cancel {
+    background-color: #7f8c8d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 </style>
 </head>
 <body>
-<nav>
-  <div class="logo">GLOBAL DROPSHIPPING</div>
-  <ul>
-    <li><a href="#model">Model</a></li>
-    <li><a href="#procedura">Procedura</a></li>
-    <li><a href="#prawo">Zgodność</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
-  </ul>
-</nav>
 
-<header class="hero">
-  <h1>Procedura zakupów ratalnych — etap po etapie</h1>
-  <p>Przejrzysty model obsługi zamówień z płatnością w ratach dla klientów indywidualnych i B2B, przygotowany jako praktyczna ścieżka organizacyjna zgodna z prawem polskim, prawem konsumenckim UE oraz standardami dokumentowania transakcji międzynarodowych.</p>
-  <a href="#procedura" class="btn-primary">Zobacz procedurę</a>
+<header>
+  <h1>PROFESJA PREMIUM LIMITED</h1>
+  <p>Podmiot należący do Metropolis Corp. | Agencja Finansowo-Handlowa Premium</p>
 </header>
 
-<section id="model">
-  <h2 class="section-title">Model współpracy</h2>
-  <p class="lead">GLOBAL DROPSHIPPING działa jako podmiot obsługujący proces zakupowy, komunikację transakcyjną, dokumenty i harmonogram płatności. Każde zamówienie jest potwierdzane indywidualnie przed przyjęciem płatności.</p>
-  <div class="grid">
-    <div class="card"><h3>Zakres rynkowy</h3><p>Dostęp do rozbudowanego asortymentu: elektronika, wyposażenie firm, maszyny, części, produkty konsumenckie i zamówienia specjalne.</p></div>
-    <div class="card"><h3>Finansowanie ratalne</h3><p>Standardowo minimum 2 raty, z pierwszą wpłatą od 50% wartości zamówienia, o ile indywidualna umowa nie stanowi inaczej.</p></div>
-    <div class="card"><h3>Transparentność</h3><p>Klient otrzymuje warunki zamówienia, cenę całkowitą, harmonogram rat, koszty dodatkowe, terminy oraz zasady odstąpienia, reklamacji i odpowiedzialności.</p></div>
+<div class="badges-bar">
+  <div class="badge-item">
+    <span class="badge-verified">✓ VERIFIED SUPPLIER</span> Zweryfikowani Producenci i Hurtownie
   </div>
-</section>
-
-<section id="procedura" class="procedure">
-  <h2 class="section-title">Procedura działania</h2>
-  <div class="steps">
-    <div class="step"><h3>1. Złożenie zapytania przez klienta</h3><p>Klient przekazuje nazwę produktu, specyfikację, ilość, przeznaczenie, preferowany termin dostawy, dane do kontaktu oraz informację, czy działa jako konsument, przedsiębiorca czy osoba reprezentująca firmę.</p></div>
-    <div class="step"><h3>2. Weryfikacja tożsamości i statusu strony</h3><p>Przedstawiciel potwierdza dane identyfikacyjne klienta, adres, NIP lub PESEL, dane firmy oraz uprawnienie osoby podpisującej dokumenty. Dane są przetwarzane wyłącznie w celu przygotowania i wykonania transakcji.</p></div>
-    <div class="step"><h3>3. Przygotowanie oferty i kalkulacji</h3><p>Oferta obejmuje opis produktu, cenę netto/brutto, walutę, koszty transportu, cła, podatki, ubezpieczenie, przewidywany termin realizacji, warunki gwarancji i informację o ryzykach logistycznych.</p></div>
-    <div class="step"><h3>4. Ocena możliwości zastosowania rat</h3><p>Przed przyjęciem sprzedaży ratalnej należy ocenić zdolność klienta do zapłaty rat. Przy konsumencie trzeba ustalić, czy konstrukcja jest kredytem konsumenckim, kredytem wiązanym albo sprzedażą na raty w rozumieniu Kodeksu cywilnego i ustawy o kredycie konsumenckim.</p></div>
-    <div class="step"><h3>5. Przekazanie informacji przedumownych</h3><p>Klient otrzymuje na trwałym nośniku projekt umowy, cenę całkowitą, wysokość i liczbę rat, terminy płatności, RRSO — jeżeli ma zastosowanie — całkowity koszt kredytu, skutki opóźnień, prawo odstąpienia oraz procedurę reklamacyjną.</p></div>
-    <div class="step"><h3>6. Akceptacja warunków</h3><p>Transakcja może zostać rozpoczęta dopiero po wyraźnej akceptacji oferty przez klienta. Akceptacja powinna być udokumentowana e-mailem, podpisem elektronicznym, podpisem odręcznym albo innym trwałym potwierdzeniem.</p></div>
-    <div class="step"><h3>7. Zawarcie umowy ratalnej</h3><p>Umowa wskazuje strony, przedmiot sprzedaży, cenę, raty, terminy, rachunek płatności, warunki dostawy, moment przejścia własności lub ryzyka, zasady odstąpienia, reklamacji, rozwiązania sporu i właściwość prawa.</p></div>
-    <div class="step"><h3>8. Przyjęcie pierwszej raty</h3><p>Pierwsza rata jest przyjmowana wyłącznie po zawarciu umowy i wystawieniu dokumentu płatności. Wpłata powinna być księgowana z jednoznacznym tytułem, numerem zamówienia i danymi klienta.</p></div>
-    <div class="step"><h3>9. Realizacja zamówienia i dokumentacja międzynarodowa</h3><p>W transakcjach transgranicznych należy zabezpieczyć faktury, specyfikacje, listy przewozowe, dokumenty celne, potwierdzenia ubezpieczenia, certyfikaty zgodności i korespondencję z dostawcami.</p></div>
-    <div class="step"><h3>10. Dostawa i odbiór</h3><p>Klient otrzymuje informację o wysyłce, numer śledzenia oraz instrukcję odbioru. Odbiór towaru należy potwierdzić protokołem, dokumentem przewozowym albo wiadomością potwierdzającą brak zastrzeżeń lub zgłoszone wady.</p></div>
-    <div class="step"><h3>11. Obsługa kolejnych rat</h3><p>Przed terminem płatności wysyłane jest przypomnienie z kwotą, datą i numerem rachunku. Każdą płatność trzeba potwierdzić klientowi i przypisać do harmonogramu.</p></div>
-    <div class="step"><h3>12. Opóźnienie, windykacja polubowna i KPC</h3><p>W razie opóźnienia najpierw wysyła się wezwanie do zapłaty i propozycję polubownego ustalenia terminu. Postępowanie sądowe może być prowadzone dopiero po zebraniu kompletnej dokumentacji umowy, płatności, dostawy i korespondencji, zgodnie z Kodeksem postępowania cywilnego.</p></div>
-    <div class="step"><h3>13. Reklamacje, odstąpienie i zwroty</h3><p>Reklamacje są rejestrowane z datą wpływu i opisem żądania. Konsument zawierający umowę na odległość powinien otrzymać pouczenie o 14-dniowym prawie odstąpienia, chyba że ustawowy wyjątek wyłącza to prawo.</p></div>
-    <div class="step"><h3>14. Archiwizacja</h3><p>Po zakończeniu transakcji przechowuje się ofertę, umowę, zgody, faktury, dowody zapłaty, dokumenty dostawy, reklamacje i korespondencję w sposób umożliwiający wykazanie przebiegu transakcji.</p></div>
+  <div class="badge-item">
+    <span style="background:#00875a; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:12px;">🛡️ TRADE ASSURANCE</span> Pełne Ubezpieczenie Transakcji Zakupu
   </div>
-  <div class="notice"><strong>Uwaga:</strong> procedura ma charakter organizacyjno-informacyjny i nie zastępuje indywidualnej porady radcy prawnego, adwokata, doradcy podatkowego ani licencjonowanej analizy wymogów kredytu konsumenckiego.</div>
-</section>
-
-<section id="prawo">
-  <h2 class="section-title">Podstawy zgodności</h2>
-  <div class="grid">
-    <div class="card"><h3>Prawo RP</h3><ul><li>Kodeks cywilny: sprzedaż na raty, odpowiedzialność kontraktowa, rękojmia i zasady wykonywania zobowiązań.</li><li>Ustawa o kredycie konsumenckim: obowiązki informacyjne, ocena ryzyka kredytowego i skutki uchybień, gdy model spełnia przesłanki kredytu konsumenckiego.</li><li>Ustawa o prawach konsumenta: obowiązki przy umowach na odległość, prawo odstąpienia i informacje przedumowne.</li><li>KPC: dokumentowanie roszczeń, wezwania do zapłaty, postępowanie dowodowe i ewentualne dochodzenie należności.</li></ul></div>
-    <div class="card"><h3>Prawo UE</h3><ul><li>Dyrektywa 2008/48/WE oraz Dyrektywa (UE) 2023/2225 dotycząca umów o kredyt konsumencki.</li><li>Standard trwałego nośnika, jasnych informacji przedumownych, oceny zdolności kredytowej i ochrony konsumenta.</li><li>RODO: minimalizacja danych, celowość przetwarzania i bezpieczeństwo dokumentów.</li></ul></div>
-    <div class="card"><h3>Standard międzynarodowy</h3><ul><li>Ustalanie prawa właściwego, jurysdykcji, warunków dostawy, waluty i odpowiedzialności za cło oraz podatki.</li><li>Gromadzenie dokumentów handlowych i logistycznych umożliwiających odprawę, reklamację i rozliczenie.</li><li>Unikanie niejasnych pośredników, niepotwierdzonych rachunków i płatności bez dokumentu źródłowego.</li></ul></div>
+  <div class="badge-item">
+    <span style="background:#00875a; padding:4px 10px; border-radius:4px; font-weight:bold; font-size:12px;">🤖 AI VERIFIED</span> Autonomiczny Audyt Gemini AI
   </div>
-  <p class="lead small">Źródła referencyjne: ISAP — Kodeks cywilny, Kodeks postępowania cywilnego, ustawa o kredycie konsumenckim i ustawa o prawach konsumenta; EUR-Lex — Dyrektywa (UE) 2023/2225; materiały UOKiK i KNF o kredycie konsumenckim.</p>
-</section>
+</div>
 
-<section id="bezpieczenstwo" class="trust">
-  <h2 class="section-title">Bezpieczeństwo i transparentność</h2>
-  <div class="grid">
-    <div class="card"><h3>Checklist przed startem</h3><ul><li>✔ Dane klienta i status konsument/przedsiębiorca</li><li>✔ Pełna cena i harmonogram rat</li><li>✔ Projekt umowy na trwałym nośniku</li><li>✔ Informacja o odstąpieniu i reklamacjach</li></ul></div>
-    <div class="card"><h3>Checklist dokumentów</h3><ul><li>✔ Oferta i akceptacja</li><li>✔ Umowa oraz zgody</li><li>✔ Faktury i potwierdzenia przelewów</li><li>✔ Dokumenty dostawy, celne i reklamacyjne</li></ul></div>
-    <div class="card"><h3>Checklist po dostawie</h3><ul><li>✔ Potwierdzenie odbioru</li><li>✔ Aktualny status rat</li><li>✔ Rejestr korespondencji</li><li>✔ Archiwizacja kompletnej sprawy</li></ul></div>
+<div class="main-container">
+
+  <div class="hero-section">
+    <h2>Bezpośredni Import B2B &amp; Direct Dropshipping</h2>
+    <p>Prezentujemy publiczne oferty sprzedażowe dostarczane bezpośrednio przez <strong>zweryfikowanych producentów oraz hurtownie (Verified Suppliers) z Alibaba.com</strong>, w pełni objęte systemem ochrony Trade Assurance.</p>
   </div>
-</section>
 
-<section id="kontakt" class="cta">
-  <h2 class="section-title">Kontakt</h2>
-  <p>W zapytaniu prosimy wskazać produkt, ilość, dane kupującego oraz preferowany model finansowania.</p><br>
-  <a href="mailto:marcin.szewczyk12557@gmail.com" class="btn-primary">marcin.szewczyk12557@gmail.com</a>
-</section>
+  <div class="catalog-header">
+    <h2 class="catalog-title">Ekskluzywny Katalog Ofert Premium</h2>
+    <button class="btn-add" onclick="openModal()">+ Dodaj nowy produkt</button>
+  </div>
+
+  <div class="product-catalog" id="catalog">
+    <!-- Przykładowy zestaw produktów wgrany dynamicznie -->
+  </div>
+
+  <div class="info-section">
+    <h2>Dedykowane Usługi Finansowe i Płatności Ratalne</h2>
+    <ul>
+      <li><strong>Zakupy na Raty B2B:</strong> Elastyczny podział płatności na raty (0% lub 7% rocznie na stałe, z 50% opłatą startową i 100% przyznawalnością bez weryfikacji w bazach BIK/KRD).</li>
+      <li><strong>Ochrona Transakcji:</strong> Wszystkie zakupy hurtowe realizowane w oparciu o gwarancję bezpiecznej dostawy Trade Assurance.</li>
+    </ul>
+  </div>
+
+  <div class="info-section" style="background: #e9f0fa; border-left: 5px solid var(--primary-color);">
+    <h2>Kontakt i Dane Firmowe</h2>
+    <p><strong>Profesja Premium Limited / Metropolis Corp.</strong><br>
+    <strong>NIP:</strong> 886-2655-482 | <strong>REGON:</strong> 36061155<br>
+    <strong>E-mail:</strong> <a href="mailto:profesja.premium@gmail.com">profesja.premium@gmail.com</a> | <a href="mailto:metropolis.corp.projekt.profesja@gmail.com">metropolis.corp.projekt.profesja@gmail.com</a></p>
+  </div>
+
+</div>
+
+<!-- Modal Formularza Dodawania Produktu -->
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <h3>Dodaj Nowy Produkt do Oferty</h3>
+    <div class="form-group">
+      <label>Nazwa Produktu:</label>
+      <input type="text" id="prodTitle" placeholder="np. RedMagic 9 Pro+ 5G">
+    </div>
+    <div class="form-group">
+      <label>Opis:</label>
+      <textarea id="prodDesc" rows="3" placeholder="Krótki opis techniczny..."></textarea>
+    </div>
+    <div class="form-group">
+      <label>Cena (USD):</label>
+      <input type="text" id="prodPrice" placeholder="np. 890 USD">
+    </div>
+    <div class="form-group">
+      <label>Marża (%):</label>
+      <input type="text" id="prodMargin" placeholder="np. Marża: 12%">
+    </div>
+    <div class="form-group">
+      <label>Zdjęcie Produktu:</label>
+      <input type="file" id="prodImage" accept="image/*">
+    </div>
+    <div class="modal-buttons">
+      <button class="btn-cancel" onclick="closeModal()">Anuluj</button>
+      <button class="btn-submit" onclick="addNewProduct()">Dodaj Produkt</button>
+    </div>
+  </div>
+</div>
 
 <footer>
-  © 2026 GLOBAL DROPSHIPPING | Marcin Szewczyk<br>
-  Procedura zakupów ratalnych i pośrednictwa zakupowego
+  <p>© 2026 Metropolis Corp. Wszelkie Prawa Zastrzeżone.</p>
+  <p>Agencja Profesja Premium Limited | NIP: 886-2655-482 | REGON: 36061155</p>
 </footer>
+
+<script>
+  // Domyślna lista produktów na podstawie przesłanych zdjęć
+  let initialProducts = [
+    { title: "Laptop Gamingowy Lenovo Legion 7 (Wersja Premium AI)", desc: "Wysokowydajny laptop z dedykowaną grafiką i zaawansowanym systemem chłodzenia.", price: "2 150 USD", margin: "Marża: 12%", img: "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=400&q=80" },
+    { title: "Smartfon RedMagic 9 Pro+ Carbon Cyber", desc: "Nowoczesna wersja w odcieniu głębokiej czerni z unikalnym motywem graficznym.", price: "910 USD", margin: "Marża: 12%", img: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=400&q=80" },
+    { title: "Smartfon RedMagic 8 Pro+ White Edition", desc: "Flagowy smartfon gamingowy w śnieżnobiałym wydaniu z wykończeniem matowym.", price: "780 USD", margin: "Marża: 12%", img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" },
+    { title: "Smartfon RedMagic 9 Pro+ Transformers Bumblebee", desc: "Ekskluzywna edycja limitowana w jaskrawej żółtej kolorystyce Transformers.", price: "1 150 USD", margin: "Marża: 12%", img: "https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=400&q=80" },
+    { title: "Smartfon RedMagic 8 Pro+ Srebrno-Niebieski Cyber", desc: "Innowacyjna obudowa z akcentami świetlnymi i transparentnym wykończeniem.", price: "820 USD", margin: "Marża: 12%", img: "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=400&q=80" },
+    { title: "Smartfon RedMagic 8 Pro+ Dark Cyberpunk", desc: "Agresywny design gamingowy z unikalnym systemem chłodzenia pasywnego.", price: "795 USD", margin: "Marża: 12%", img: "https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=400&q=80" }
+  ];
+
+  function renderCatalog() {
+    const catalog = document.getElementById('catalog');
+    catalog.innerHTML = '';
+    initialProducts.forEach((item, index) => {
+      catalog.appendChild(createProductCard(item, index));
+    });
+  }
+
+  function createProductCard(item, index) {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `
+      <button class="btn-delete" title="Usuń produkt" onclick="deleteProduct(${index})">×</button>
+      <img src="${item.img}" alt="${item.title}">
+      <div class="product-info">
+        <h3 class="editable" contenteditable="true" title="Kliknij, aby edytować tytuł">${item.title}</h3>
+        <p class="editable" contenteditable="true" title="Kliknij, aby edytować opis">${item.desc}</p>
+      </div>
+      <div class="product-pricing">
+        <div class="margin editable" contenteditable="true" title="Kliknij, aby edytować marżę">${item.margin}</div>
+        <div class="final-price editable" contenteditable="true" title="Kliknij, aby edytować cenę">${item.price}</div>
+      </div>
+    `;
+    return card;
+  }
+
+  function deleteProduct(index) {
+    initialProducts.splice(index, 1);
+    renderCatalog();
+  }
+
+  function openModal() {
+    document.getElementById('productModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('productModal').style.display = 'none';
+    clearForm();
+  }
+
+  function clearForm() {
+    document.getElementById('prodTitle').value = '';
+    document.getElementById('prodDesc').value = '';
+    document.getElementById('prodPrice').value = '';
+    document.getElementById('prodMargin').value = '';
+    document.getElementById('prodImage').value = '';
+  }
+
+  function addNewProduct() {
+    const title = document.getElementById('prodTitle').value || 'Nowy Produkt';
+    const desc = document.getElementById('prodDesc').value || 'Brak opisu.';
+    const price = document.getElementById('prodPrice').value || '0 USD';
+    const margin = document.getElementById('prodMargin').value || 'Marża: 12%';
+    const imgInput = document.getElementById('prodImage');
+
+    if (imgInput.files && imgInput.files[0]) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        initialProducts.unshift({
+          title: title,
+          desc: desc,
+          price: price,
+          margin: margin,
+          img: e.target.result
+        });
+        renderCatalog();
+        closeModal();
+      };
+      reader.readAsDataURL(imgInput.files[0]);
+    } else {
+      initialProducts.unshift({
+        title: title,
+        desc: desc,
+        price: price,
+        margin: margin,
+        img: 'https://via.placeholder.com/400x300?text=Brak+Zdjecia'
+      });
+      renderCatalog();
+      closeModal();
+    }
+  }
+
+  // Inicjalne ładowanie
+  renderCatalog();
+</script>
+
 </body>
 </html>
